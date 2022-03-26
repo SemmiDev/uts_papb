@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#A180A3"
+    android:layout_height="1000dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SegitigaSamaKakiActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="cursive"
+            android:text="Segitiga Sama Kaki"
+            android:textColor="@color/black2"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/samakaki"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/abSegitigaSamaKaki"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form"
+            android:fontFamily="casual"
+            android:hint="Masukkan Sisi AB"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black2"
+            android:textColorHint="@color/black2"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/acSegitigaSamaKaki"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/form"
+            android:hint="Masukkan Sisi AC"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:fontFamily="casual"
+            android:textColor="@color/black2"
+            android:textColorHint="@color/black2"
+            app:layout_constraintEnd_toEndOf="@+id/abSegitigaSamaKaki"
+            app:layout_constraintStart_toStartOf="@+id/abSegitigaSamaKaki"
+            app:layout_constraintTop_toBottomOf="@+id/abSegitigaSamaKaki" />
+
+        <Button
+            android:id="@+id/btnHitungSegitigaSamaKaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn5"
+            android:fontFamily="@font/sfbold"
+            android:padding="10dp"
+            android:text="Hitung"
+            android:textColor="@color/white2"
+            app:layout_constraintEnd_toEndOf="@+id/acSegitigaSamaKaki"
+            app:layout_constraintStart_toStartOf="@+id/acSegitigaSamaKaki"
+            app:layout_constraintTop_toBottomOf="@+id/acSegitigaSamaKaki" />
+
+        <RelativeLayout
+            android:id="@+id/samaKakiLinear1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHitungSegitigaSamaKaki">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas"
+                android:textColorHint="@color/black2"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="casual"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/outputLuasSamaKaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColorHint="@color/black2"
+                android:textStyle="bold"
+                android:layout_marginLeft="150dp"
+                android:fontFamily="casual"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/samaKakiLinear1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keliling"
+                android:textColorHint="@color/black2"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="casual"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/outputKelilingSamaKaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColorHint="@color/black2"
+                android:textStyle="bold"
+                android:layout_marginLeft="150dp"
+                android:fontFamily="casual"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

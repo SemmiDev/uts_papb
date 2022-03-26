@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Materi"
+        android:textColor="@color/white2"
+        android:textSize="20sp"
+        android:layout_marginLeft="130dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bacaMaterial"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Baca Sekarang"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:background="@drawable/btn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:text="Perhitungan Otomatis"
+        android:textColor="@color/white2"
+        android:textSize="20sp"
+        android:layout_marginLeft="75dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSikuSiku"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Segitiga Siku Siku"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:background="@drawable/btn2"/>
+
+    <Button
+        android:id="@+id/btnSamaSisi"
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Segitiga Sama Sisi"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:background="@drawable/btn3"/>
+
+    <Button
+        android:id="@+id/btnSamaKaki"
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Segitiga Sama Kaki"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:background="@drawable/btn4"/>
+
+    <Button
+        android:id="@+id/btnSembarang"
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Segitiga Sembarang"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/white"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:background="@drawable/btn5"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnPengembang"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/btndev"
+            android:fontFamily="@font/sfbold"
+            android:padding="10dp"
+            android:text="Pengembang"
+            android:textColor="@color/white2" />
+
+        <Button
+            android:id="@+id/btnBackMulaiBelajar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btnback"
+            android:fontFamily="@font/sfbold"
+            android:padding="10dp"
+            android:text="Kembali"
+            android:textColor="@color/white2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/splash"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="cursive"
+        android:text="Selamat Datang"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="casual"
+        android:text="@string/app_desc"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:text="@string/app_desc_2"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lovee" />
+
+    <Button
+        android:id="@+id/mulaiBelajar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="170dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/sfbold"
+        android:padding="10dp"
+        android:text="Mulai Belajar"
+        android:textColor="@color/white2" />
+</LinearLayout>

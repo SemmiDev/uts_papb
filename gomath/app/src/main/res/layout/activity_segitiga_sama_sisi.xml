@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#CC707F"
+    android:layout_height="1000dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SegitigaSamaSisiActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="cursive"
+            android:text="Segitiga Sama Sisi"
+            android:textColor="@color/black2"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/samasisi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/sisiSegitigaSamaSisi"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form"
+            android:fontFamily="casual"
+            android:hint="Masukkan sisi"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black2"
+            android:textColorHint="@color/black2"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/btnHitungSegitigaSamaSisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn2"
+            android:fontFamily="@font/sfbold"
+            android:padding="10dp"
+            android:text="Hitung"
+            android:textColor="@color/white2"
+            app:layout_constraintEnd_toEndOf="@+id/sisiSegitigaSamaSisi"
+            app:layout_constraintStart_toStartOf="@+id/sisiSegitigaSamaSisi"
+            app:layout_constraintTop_toBottomOf="@+id/sisiSegitigaSamaSisi" />
+
+        <RelativeLayout
+            android:id="@+id/samaSisiLinear"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHitungSegitigaSamaSisi">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas"
+                android:textColorHint="@color/black2"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="casual"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/outputLuasSamaSisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColorHint="@color/black2"
+                android:textStyle="bold"
+                android:layout_marginLeft="150dp"
+                android:fontFamily="casual"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/samaSisiLinear">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keliling"
+                android:textColorHint="@color/black2"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="casual"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/outputKelilingSamaSisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColorHint="@color/black2"
+                android:textStyle="bold"
+                android:layout_marginLeft="150dp"
+                android:fontFamily="casual"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
