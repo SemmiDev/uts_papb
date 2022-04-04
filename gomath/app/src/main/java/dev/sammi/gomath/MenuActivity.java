@@ -8,13 +8,21 @@ import android.view.View;
 import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
-    Button btnBackMulaiBelajar,
+    Button  btnBackMulaiBelajar,
             btnSegitigaSikuSiku,
             btnSegitigaSamaSisi,
             btnSegitigaSamaKaki,
             btnSegitigaSembarang,
             btnMaterial,
             btndeveloper;
+
+    Intent toMaterial,
+            toDeveloper,
+            toHome,
+            toSegitigaSikuSiku,
+            toSegitigaSamaKaki,
+            toSegitigaSembarang,
+            toSegitigaSamaSisi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,59 +40,28 @@ public class MenuActivity extends AppCompatActivity {
         btnSegitigaSamaKaki = findViewById(R.id.btnSamaKaki);
         btnSegitigaSembarang = findViewById(R.id.btnSembarang);
 
-        btnMaterial.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent menu = new Intent(getApplicationContext(), MaterialActivity.class);
-                startActivity(menu);
-            }
-        });
+        toMaterial = new Intent(getApplicationContext(), MaterialActivity.class);
+        toDeveloper = new Intent(getApplicationContext(), DeveloperActivity.class);
+        toHome = new Intent(getApplicationContext(), HomeActivity.class);
+        toSegitigaSikuSiku = new Intent(getApplicationContext(), SegitigaSikuSikuActivity.class);
+        toSegitigaSamaKaki = new Intent(getApplicationContext(), SegitigaSamaKakiActivity.class);
+        toSegitigaSembarang = new Intent(getApplicationContext(), SegitigaSembarangActivity.class);
+        toSegitigaSamaSisi = new Intent(getApplicationContext(), SegitigaSamaSisiActivity.class);
 
-        btndeveloper.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent menu = new Intent(getApplicationContext(), DeveloperActivity.class);
-                startActivity(menu);
-            }
-        });
+        launchActivity(btnMaterial, toMaterial);
+        launchActivity(btndeveloper, toDeveloper);
+        launchActivity(btnBackMulaiBelajar, toHome);
+        launchActivity(btnSegitigaSikuSiku, toSegitigaSikuSiku);
+        launchActivity(btnSegitigaSamaSisi, toSegitigaSamaSisi);
+        launchActivity(btnSegitigaSamaKaki, toSegitigaSamaKaki);
+        launchActivity(btnSegitigaSembarang, toSegitigaSembarang);
+    }
 
-        btnBackMulaiBelajar.setOnClickListener(new View.OnClickListener() {
+    private void launchActivity(Button btn, final Intent intent) {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent menu = new Intent(getApplicationContext(), HomeActivity.class);
-                startActivity(menu);
-            }
-        });
-
-        btnSegitigaSikuSiku.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent menu = new Intent(getApplicationContext(), SegitigaSikuSikuActivity.class);
-                startActivity(menu);
-            }
-        });
-
-        btnSegitigaSamaSisi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent menu = new Intent(getApplicationContext(), SegitigaSamaSisiActivity.class);
-                startActivity(menu);
-            }
-        });
-
-        btnSegitigaSamaKaki.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent menu = new Intent(getApplicationContext(), SegitigaSamaKakiActivity.class);
-                startActivity(menu);
-            }
-        });
-
-        btnSegitigaSembarang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent menu = new Intent(getApplicationContext(), SegitigaSembarangActivity.class);
-                startActivity(menu);
+                startActivity(intent);
             }
         });
     }

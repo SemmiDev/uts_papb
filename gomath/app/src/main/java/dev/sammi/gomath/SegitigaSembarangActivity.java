@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import dev.sammi.gomath.R;
-
 public class SegitigaSembarangActivity extends AppCompatActivity {
 
     Button hitungLuasSegitigaSembarang;
@@ -71,12 +69,12 @@ public class SegitigaSembarangActivity extends AppCompatActivity {
         });
     }
 
-    public double keliling(double sisiA, double sisiB, double sisiC) {
-        return sisiA + sisiB + sisiC;
-    }
-
     public double luas(double sisiA, double sisiB, double sisiC) {
         double s = keliling(sisiA, sisiB, sisiC) / 2;
-        return Math.sqrt(s * ((s - sisiA) * (s - sisiB) * (s - sisiC));
+        return Math.sqrt(s * ((s - sisiA) * (s - sisiB) * (s - sisiC)));
+    }
+
+    public double keliling(double sisiA, double sisiB, double sisiC) {
+        return sisiA + sisiB + sisiC;
     }
 }

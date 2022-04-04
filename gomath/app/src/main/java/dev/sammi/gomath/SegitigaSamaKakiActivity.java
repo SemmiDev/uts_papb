@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import dev.sammi.gomath.R;
-
 public class SegitigaSamaKakiActivity extends AppCompatActivity {
 
     Button hitungLuasSegitigaSamaKaki;
@@ -70,7 +68,6 @@ public class SegitigaSamaKakiActivity extends AppCompatActivity {
     }
 
     public double keliling(double sisiAB, double sisiAC) {
-        double tinggi = Math.sqrt(Math.pow(sisiAC, 2) + Math.pow(sisiAB, 2));
-        return sisiAB + sisiAC + tinggi;
+        return sisiAB + sisiAC + sisiAC;
     }
 }

@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import dev.sammi.gomath.R;
-
 public class SegitigaSamaSisiActivity extends AppCompatActivity {
     Button hitungLuasSegitigaSamaSisi;
     EditText sisi;
@@ -47,7 +45,7 @@ public class SegitigaSamaSisiActivity extends AppCompatActivity {
                     hasilKeliling = findViewById(R.id.outputKelilingSamaSisi);
                     hasilKeliling.setText("");
 
-                    hasilLuas.append(": " + kalkulasiHasilLuas + " √3");
+                    hasilLuas.append(": " + kalkulasiHasilLuas);
                     hasilKeliling.append(": " + kalkulasiHasilKel);
                 }
             }
@@ -58,7 +56,8 @@ public class SegitigaSamaSisiActivity extends AppCompatActivity {
         return 3 * sisi;
     }
 
-    public double luas(double alas) {
-        return Math.pow(alas, 2) / 4;
+    public double luas(double sisi) {
+        double tinggi = (sisi * Math.sqrt(3)) / 2;
+        return (sisi * tinggi) / 2;
     }
 }

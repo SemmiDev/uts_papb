@@ -46,8 +46,8 @@ public class SegitigaSikuSikuActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Tinggi Harus Diisi", Toast.LENGTH_SHORT).show();
                     return;
                 } else {
-                    inputAlas = Double.parseDouble(alasString);
-                    inputTinggi = Double.parseDouble(tinggiString);
+                    inputAlas = Double.valueOf(alasString);
+                    inputTinggi = Double.valueOf(tinggiString);
 
                     kalkulasiHasilLuas = luas(inputAlas, inputTinggi);
                     kalkulasiHasilKel = keliling(inputAlas, inputTinggi);
@@ -70,7 +70,7 @@ public class SegitigaSikuSikuActivity extends AppCompatActivity {
     }
 
     public double keliling(double alas, double tinggi) {
-        double miring = Math.sqrt(Math.pow(alas, 2) + Math.pow(tinggi, 2));
+        double miring = Math.sqrt((alas * alas) + (tinggi * tinggi));
         return alas + tinggi + miring;
     }
 }

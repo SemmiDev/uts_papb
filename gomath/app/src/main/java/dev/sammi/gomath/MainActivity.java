@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
+
     private Handler mWaitHandler = new Handler();
 
     @Override
